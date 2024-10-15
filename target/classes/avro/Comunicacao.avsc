@@ -1,0 +1,32 @@
+{
+  "namespace": "br.com.kafka.comunicador.event",
+  "type": "record",
+  "name": "Comunicacao",
+  "fields":[
+    {
+      "name": "id",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "dataAgendamento",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "tipoComunicacao",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "destinatario",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "mensagem",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}

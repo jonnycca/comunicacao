@@ -1,9 +1,11 @@
 br\com\comunicador\adapter\in\http\controller\ComunicacaoController.class
 br\com\comunicador\application\ports\in\ExecutarComunicacaoPort.class
+br\com\kafka\comunicador\event\Comunicacao$Builder.class
 br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapperImpl.class
 br\com\comunicador\adapter\in\scheduler\AgendadorComunicacoes.class
 br\com\comunicador\ComunicadorApplication.class
 br\com\comunicador\application\domain\TipoComunicacao.class
+br\com\kafka\comunicador\event\Comunicacao.class
 br\com\comunicador\application\domain\Comunicacao.class
 br\com\comunicador\application\domain\StatusComunicacao.class
 br\com\comunicador\adapter\out\database\entity\ComunicacaoEntity.class

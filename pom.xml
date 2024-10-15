@@ -31,7 +31,24 @@
 		<org.mapstruct.version>1.6.2</org.mapstruct.version>
 		<spring-boot.version>3.3.4</spring-boot.version>
 		<lombok.version>1.18.34</lombok.version>
+		<!-- AVRO-->
+		<avro.version>1.8.2</avro.version>
+		<io.confluent.kafka-avro-serializer.version>5.3.0</io.confluent.kafka-avro-serializer.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>confluent</id>
+			<name>Confluent</name>
+			<url>https://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>confluent</id>
+			<url>https://packages.confluent.io/maven/</url>
+		</pluginRepository>
+	</pluginRepositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,6 +91,19 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>${avro.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer -->
+		<dependency>
+			<groupId>io.confluent</groupId>
+			<artifactId>kafka-avro-serializer</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -108,6 +138,45 @@
 						<!-- other annotation processors -->
 					</annotationProcessorPaths>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-schema-registry-maven-plugin</artifactId>
+				<version>6.1.1</version>
+				<configuration>
+					<schemaRegistryUrls>
+						<param>http://localhost:8081</param>
+					</schemaRegistryUrls>
+					<subjects>
+						<br.com.kafka.comunicador.event.UserAvro>
+							src/main/resources/avro/UserAvro.avsc
+						</br.com.kafka.comunicador.event.UserAvro>
+					</subjects>
+					<outputDirectory/>
+				</configuration>
+				<goals>
+					<goal>register</goal>
+				</goals>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro-maven-plugin</artifactId>
+				<version>${avro.version}</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>schema</goal>
+							<goal>protocol</goal>
+							<goal>idl-protocol</goal>
+						</goals>
+						<configuration>
+							<sourceDirectory>${project.basedir}/src/main/resources/avro</sourceDirectory>
+							<outputDirectory>${project.basedir}/target/generated-sources</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
