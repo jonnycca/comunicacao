@@ -26,4 +26,17 @@ public class ComunicacaoPortImpl implements ComunicacaoPort {
     public Comunicacao consultar(Long id) {
         return persistirComunicacao.consultar(id);
     }
+
+    @Override
+    public Comunicacao cancelar(Long id) {
+        Comunicacao comunicacaoConsultada = persistirComunicacao.consultar(id);
+
+        if(!comunicacaoConsultada.getStatus().isAgendada()){
+            //TODO: EXCEPTION PQ SO PODE CANCELAR SE TIVER AGENDADA
+        }
+
+        comunicacaoConsultada.setStatusCancelada();
+
+        return persistirComunicacao.salvar(comunicacaoConsultada);
+    }
 }

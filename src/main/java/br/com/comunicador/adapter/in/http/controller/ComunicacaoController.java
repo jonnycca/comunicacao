@@ -44,4 +44,11 @@ public class ComunicacaoController {
 
         return ResponseEntity.ok().body(mapper.map(comunicacaoConsultada));
     }
+
+    @PatchMapping("/cancelar/{idComunicacao}")
+    public ResponseEntity<ComunicacaoResponse> cancelarComunicacao(@PathVariable Long idComunicacao){
+        Comunicacao comunicacaoCancelada = comunicacaoPort.cancelar(idComunicacao);
+
+        return ResponseEntity.ok().body(mapper.map(comunicacaoCancelada));
+    }
 }

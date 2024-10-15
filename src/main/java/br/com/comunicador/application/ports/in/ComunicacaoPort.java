@@ -6,5 +6,6 @@ public interface ComunicacaoPort {
 
     Comunicacao comunicar(Comunicacao comunicacao);
     Comunicacao consultar(Long id);
+    Comunicacao cancelar(Long id);
 
 }
