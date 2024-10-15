@@ -27,4 +27,9 @@ public class PersistirComunicacaoPortImpl implements PersistirComunicacaoPort {
 
         return mapper.map(repository.save(comunicacaoEntity));
     }
+
+    @Override
+    public Comunicacao consultar(Long id) {
+        return repository.findById(id).map(mapper::map).orElseThrow(()-> new RuntimeException(""));//todo: criar exception propria
+    }
 }

@@ -5,4 +5,8 @@ import br.com.comunicador.application.domain.Comunicacao;
 public interface PersistirComunicacaoPort {
 
     Comunicacao salvar(Comunicacao comunicacao);
+
+    Comunicacao consultar(Long id);
+
+
 }

@@ -21,4 +21,9 @@ public class ComunicacaoPortImpl implements ComunicacaoPort {
         comunicacao.setStatusAgendada();
         return persistirComunicacao.salvar(comunicacao);
     }
+
+    @Override
+    public Comunicacao consultar(Long id) {
+        return persistirComunicacao.consultar(id);
+    }
 }

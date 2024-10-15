@@ -10,10 +10,7 @@ import jdk.javadoc.doclet.Taglet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 
@@ -38,5 +35,13 @@ public class ComunicacaoController {
         Comunicacao comunicacaoSava = comunicacaoPort.comunicar(mapper.map(agendarComunicacao));
 
         return ResponseEntity.created(URI.create("/comunicacao/agendar")).body(mapper.map(comunicacaoSava));
+    }
+
+    @GetMapping("/{idComunicacao}")
+    public ResponseEntity<ComunicacaoResponse> consultarComunicacao(@PathVariable Long idComunicacao){
+
+        Comunicacao comunicacaoConsultada = comunicacaoPort.consultar(idComunicacao);
+
+        return ResponseEntity.ok().body(mapper.map(comunicacaoConsultada));
     }
 }
