@@ -1,0 +1,8 @@
+C:\workspace\comunicador\src\main\java\br\com\comunicador\application\domain\Comunicacao.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\request\AgendarComunicacaoRequest.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapper.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\application\domain\TipoComunicacao.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\application\service\ComunicacaoPortImpl.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\ComunicadorApplication.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\ComunicacaoController.java
+C:\workspace\comunicador\src\main\java\br\com\comunicador\application\ports\in\ComunicacaoPort.java
