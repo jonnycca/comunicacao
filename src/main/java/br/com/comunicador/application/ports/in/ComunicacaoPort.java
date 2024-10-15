@@ -4,5 +4,5 @@ import br.com.comunicador.application.domain.Comunicacao;
 
 public interface ComunicacaoPort {
 
-    void comunicar(Comunicacao comunicacao);
+    Comunicacao comunicar(Comunicacao comunicacao);
 }

@@ -19,15 +19,21 @@ public class Comunicacao {
     private String destinatario; //todo: verificar se muda para outra classe
 
     private String mensagem;
+    private StatusComunicacao status;
+
+    public void setStatusAgendada(){
+        this.status = StatusComunicacao.AGENDADA;
+    }
 
     @Override
-    public String toString() {//todo: remover dps
+    public String toString() {
         return "Comunicacao{" +
                 "id=" + id +
                 ", dataAgendamento=" + dataAgendamento +
                 ", tipoComunicacao=" + tipoComunicacao +
                 ", destinatario='" + destinatario + '\'' +
                 ", mensagem='" + mensagem + '\'' +
+                ", status=" + status +
                 '}';
     }
 }
