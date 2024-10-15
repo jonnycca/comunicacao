@@ -5,12 +5,14 @@ import br.com.comunicador.application.domain.Comunicacao;
 import br.com.comunicador.application.domain.StatusComunicacao;
 import br.com.comunicador.application.domain.TipoComunicacao;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-10-15T14:15:56-0300",
+    date = "2024-10-15T19:33:46-0300",
     comments = "version: 1.6.2, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component
@@ -57,5 +59,33 @@ public class ComunicacaoEntityMapperImpl implements ComunicacaoEntityMapper {
         Comunicacao comunicacao = new Comunicacao( id, dataAgendamento, tipoComunicacao, destinatario, mensagem, status );
 
         return comunicacao;
+    }
+
+    @Override
+    public List<Comunicacao> mapComunicacaoList(List<ComunicacaoEntity> source) {
+        if ( source == null ) {
+            return null;
+        }
+
+        List<Comunicacao> list = new ArrayList<Comunicacao>( source.size() );
+        for ( ComunicacaoEntity comunicacaoEntity : source ) {
+            list.add( map( comunicacaoEntity ) );
+        }
+
+        return list;
+    }
+
+    @Override
+    public List<ComunicacaoEntity> mapComunicacaoEntityList(List<Comunicacao> source) {
+        if ( source == null ) {
+            return null;
+        }
+
+        List<ComunicacaoEntity> list = new ArrayList<ComunicacaoEntity>( source.size() );
+        for ( Comunicacao comunicacao : source ) {
+            list.add( map( comunicacao ) );
+        }
+
+        return list;
     }
 }

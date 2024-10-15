@@ -1,5 +1,7 @@
 br\com\comunicador\adapter\in\http\controller\ComunicacaoController.class
+br\com\comunicador\application\ports\in\ExecutarComunicacaoPort.class
 br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapperImpl.class
+br\com\comunicador\adapter\in\scheduler\AgendadorComunicacoes.class
 br\com\comunicador\ComunicadorApplication.class
 br\com\comunicador\application\domain\TipoComunicacao.class
 br\com\comunicador\application\domain\Comunicacao.class
@@ -14,4 +16,5 @@ br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapper.cl
 br\com\comunicador\adapter\out\database\repository\ComunicacaoRepository.class
 br\com\comunicador\application\service\ComunicacaoPortImpl.class
 br\com\comunicador\adapter\in\http\controller\request\AgendarComunicacaoRequest.class
+br\com\comunicador\application\service\ExecutarComunicacaoPortImpl.class
 br\com\comunicador\adapter\out\database\PersistirComunicacaoPortImpl.class

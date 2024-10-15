@@ -33,4 +33,17 @@ public class ComunicacaoEntity {
     private StatusComunicacao status;
 
     private String mensagem;
+
+
+    @Override
+    public String toString() {
+        return "ComunicacaoEntity{" +
+                "id=" + id +
+                ", dataAgendamento=" + dataAgendamento +
+                ", tipoComunicacao=" + tipoComunicacao +
+                ", destinatario='" + destinatario + '\'' +
+                ", status=" + status +
+                ", mensagem='" + mensagem + '\'' +
+                '}';
+    }
 }

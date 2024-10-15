@@ -29,6 +29,10 @@ public class Comunicacao {
         this.status = StatusComunicacao.CANCELADA;
     }
 
+    public void setStatusEnviada(){
+        this.status = StatusComunicacao.ENVIADA;
+    }
+
     @Override
     public String toString() {
         return "Comunicacao{" +
