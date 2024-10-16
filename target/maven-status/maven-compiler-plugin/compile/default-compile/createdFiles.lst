@@ -23,5 +23,7 @@ br\com\comunicador\application\ports\in\ComunicacaoPort.class
 br\com\comunicador\application\ports\out\persistence\PersistirComunicacaoPort.class
 br\com\comunicador\config\KafkaConfig.class
 br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapper.class
+br\com\comunicador\application\exception\BusinessException.class
 br\com\comunicador\application\service\ComunicacaoPortImpl.class
 br\com\comunicador\application\service\ExecutarComunicacaoPortImpl.class
+br\com\comunicador\application\exception\ComunicacaoStatusInvalidoException.class

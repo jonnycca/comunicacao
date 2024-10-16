@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e38f57-d0c6-41ad-8b3d-fc7a09e342f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/exception/ComunicacaoStatusInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/ComunicacaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/ComunicacaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/request/AgendarComunicacaoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/request/AgendarComunicacaoRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/response/ComunicacaoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/response/ComunicacaoResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/scheduler/AgendadorComunicacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/scheduler/AgendadorComunicacoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/PersistirComunicacaoPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/PersistirComunicacaoPortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/entity/ComunicacaoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/entity/ComunicacaoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/domain/Comunicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/domain/Comunicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/service/ComunicacaoPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/service/ComunicacaoPortImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comunicador-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/comunicador-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/in/http/controller/mapper/ComunicacaoRequestMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/in/http/controller/mapper/ComunicacaoRequestMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/database/mapper/ComunicacaoEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/database/mapper/ComunicacaoEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/kafka/producer/mapper/ComunicacaoEventMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/kafka/producer/mapper/ComunicacaoEventMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ComunicadorApplication.executor": "Debug",
-    "Docker.docker/docker-compose.yaml.kafka-cluster: Compose Deployment.executor": "Run",
-    "Docker.docker/docker-compose.yaml.postgres: Compose Deployment.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/workspace/pessoal/comunicador",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.49595687",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ComunicadorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker/docker-compose.yaml.kafka-cluster: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker/docker-compose.yaml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/pessoal/comunicador&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.49595687&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\pessoal\comunicador" />
