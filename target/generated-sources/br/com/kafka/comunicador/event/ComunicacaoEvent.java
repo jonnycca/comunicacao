@@ -12,23 +12,23 @@ import org.apache.avro.message.SchemaStore;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
-public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1973244153515984037L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comunicacao\",\"namespace\":\"br.com.kafka.comunicador.event\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"dataAgendamento\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"tipoComunicacao\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"destinatario\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"mensagem\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
+public class ComunicacaoEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = 7985207513469642319L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ComunicacaoEvent\",\"namespace\":\"br.com.kafka.comunicador.event\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"dataAgendamento\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"tipoComunicacao\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"destinatario\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"mensagem\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
 
-  private static final BinaryMessageEncoder<Comunicacao> ENCODER =
-      new BinaryMessageEncoder<Comunicacao>(MODEL$, SCHEMA$);
+  private static final BinaryMessageEncoder<ComunicacaoEvent> ENCODER =
+      new BinaryMessageEncoder<ComunicacaoEvent>(MODEL$, SCHEMA$);
 
-  private static final BinaryMessageDecoder<Comunicacao> DECODER =
-      new BinaryMessageDecoder<Comunicacao>(MODEL$, SCHEMA$);
+  private static final BinaryMessageDecoder<ComunicacaoEvent> DECODER =
+      new BinaryMessageDecoder<ComunicacaoEvent>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageDecoder instance used by this class.
    */
-  public static BinaryMessageDecoder<Comunicacao> getDecoder() {
+  public static BinaryMessageDecoder<ComunicacaoEvent> getDecoder() {
     return DECODER;
   }
 
@@ -36,17 +36,17 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
    */
-  public static BinaryMessageDecoder<Comunicacao> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<Comunicacao>(MODEL$, SCHEMA$, resolver);
+  public static BinaryMessageDecoder<ComunicacaoEvent> createDecoder(SchemaStore resolver) {
+    return new BinaryMessageDecoder<ComunicacaoEvent>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this Comunicacao to a ByteBuffer. */
+  /** Serializes this ComunicacaoEvent to a ByteBuffer. */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a Comunicacao from a ByteBuffer. */
-  public static Comunicacao fromByteBuffer(
+  /** Deserializes a ComunicacaoEvent from a ByteBuffer. */
+  public static ComunicacaoEvent fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
@@ -62,7 +62,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public Comunicacao() {}
+  public ComunicacaoEvent() {}
 
   /**
    * All-args constructor.
@@ -72,7 +72,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
    * @param destinatario The new value for destinatario
    * @param mensagem The new value for mensagem
    */
-  public Comunicacao(java.lang.CharSequence id, java.lang.CharSequence dataAgendamento, java.lang.CharSequence tipoComunicacao, java.lang.CharSequence destinatario, java.lang.CharSequence mensagem) {
+  public ComunicacaoEvent(java.lang.CharSequence id, java.lang.CharSequence dataAgendamento, java.lang.CharSequence tipoComunicacao, java.lang.CharSequence destinatario, java.lang.CharSequence mensagem) {
     this.id = id;
     this.dataAgendamento = dataAgendamento;
     this.tipoComunicacao = tipoComunicacao;
@@ -187,36 +187,36 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
   }
 
   /**
-   * Creates a new Comunicacao RecordBuilder.
-   * @return A new Comunicacao RecordBuilder
+   * Creates a new ComunicacaoEvent RecordBuilder.
+   * @return A new ComunicacaoEvent RecordBuilder
    */
-  public static br.com.kafka.comunicador.event.Comunicacao.Builder newBuilder() {
-    return new br.com.kafka.comunicador.event.Comunicacao.Builder();
+  public static br.com.kafka.comunicador.event.ComunicacaoEvent.Builder newBuilder() {
+    return new br.com.kafka.comunicador.event.ComunicacaoEvent.Builder();
   }
 
   /**
-   * Creates a new Comunicacao RecordBuilder by copying an existing Builder.
+   * Creates a new ComunicacaoEvent RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new Comunicacao RecordBuilder
+   * @return A new ComunicacaoEvent RecordBuilder
    */
-  public static br.com.kafka.comunicador.event.Comunicacao.Builder newBuilder(br.com.kafka.comunicador.event.Comunicacao.Builder other) {
-    return new br.com.kafka.comunicador.event.Comunicacao.Builder(other);
+  public static br.com.kafka.comunicador.event.ComunicacaoEvent.Builder newBuilder(br.com.kafka.comunicador.event.ComunicacaoEvent.Builder other) {
+    return new br.com.kafka.comunicador.event.ComunicacaoEvent.Builder(other);
   }
 
   /**
-   * Creates a new Comunicacao RecordBuilder by copying an existing Comunicacao instance.
+   * Creates a new ComunicacaoEvent RecordBuilder by copying an existing ComunicacaoEvent instance.
    * @param other The existing instance to copy.
-   * @return A new Comunicacao RecordBuilder
+   * @return A new ComunicacaoEvent RecordBuilder
    */
-  public static br.com.kafka.comunicador.event.Comunicacao.Builder newBuilder(br.com.kafka.comunicador.event.Comunicacao other) {
-    return new br.com.kafka.comunicador.event.Comunicacao.Builder(other);
+  public static br.com.kafka.comunicador.event.ComunicacaoEvent.Builder newBuilder(br.com.kafka.comunicador.event.ComunicacaoEvent other) {
+    return new br.com.kafka.comunicador.event.ComunicacaoEvent.Builder(other);
   }
 
   /**
-   * RecordBuilder for Comunicacao instances.
+   * RecordBuilder for ComunicacaoEvent instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Comunicacao>
-    implements org.apache.avro.data.RecordBuilder<Comunicacao> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ComunicacaoEvent>
+    implements org.apache.avro.data.RecordBuilder<ComunicacaoEvent> {
 
     private java.lang.CharSequence id;
     private java.lang.CharSequence dataAgendamento;
@@ -233,7 +233,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(br.com.kafka.comunicador.event.Comunicacao.Builder other) {
+    private Builder(br.com.kafka.comunicador.event.ComunicacaoEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -258,10 +258,10 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
     }
 
     /**
-     * Creates a Builder by copying an existing Comunicacao instance
+     * Creates a Builder by copying an existing ComunicacaoEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(br.com.kafka.comunicador.event.Comunicacao other) {
+    private Builder(br.com.kafka.comunicador.event.ComunicacaoEvent other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -298,7 +298,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder setId(java.lang.CharSequence value) {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder setId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -318,7 +318,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder clearId() {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -337,7 +337,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'dataAgendamento'.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder setDataAgendamento(java.lang.CharSequence value) {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder setDataAgendamento(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.dataAgendamento = value;
       fieldSetFlags()[1] = true;
@@ -357,7 +357,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'dataAgendamento' field.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder clearDataAgendamento() {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder clearDataAgendamento() {
       dataAgendamento = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -376,7 +376,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'tipoComunicacao'.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder setTipoComunicacao(java.lang.CharSequence value) {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder setTipoComunicacao(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.tipoComunicacao = value;
       fieldSetFlags()[2] = true;
@@ -396,7 +396,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'tipoComunicacao' field.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder clearTipoComunicacao() {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder clearTipoComunicacao() {
       tipoComunicacao = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -415,7 +415,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'destinatario'.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder setDestinatario(java.lang.CharSequence value) {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder setDestinatario(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.destinatario = value;
       fieldSetFlags()[3] = true;
@@ -435,7 +435,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'destinatario' field.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder clearDestinatario() {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder clearDestinatario() {
       destinatario = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -454,7 +454,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'mensagem'.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder setMensagem(java.lang.CharSequence value) {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder setMensagem(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.mensagem = value;
       fieldSetFlags()[4] = true;
@@ -474,7 +474,7 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'mensagem' field.
       * @return This builder.
       */
-    public br.com.kafka.comunicador.event.Comunicacao.Builder clearMensagem() {
+    public br.com.kafka.comunicador.event.ComunicacaoEvent.Builder clearMensagem() {
       mensagem = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -482,9 +482,9 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
 
     @Override
     @SuppressWarnings("unchecked")
-    public Comunicacao build() {
+    public ComunicacaoEvent build() {
       try {
-        Comunicacao record = new Comunicacao();
+        ComunicacaoEvent record = new ComunicacaoEvent();
         record.id = fieldSetFlags()[0] ? this.id : (java.lang.CharSequence) defaultValue(fields()[0]);
         record.dataAgendamento = fieldSetFlags()[1] ? this.dataAgendamento : (java.lang.CharSequence) defaultValue(fields()[1]);
         record.tipoComunicacao = fieldSetFlags()[2] ? this.tipoComunicacao : (java.lang.CharSequence) defaultValue(fields()[2]);
@@ -498,8 +498,8 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumWriter<Comunicacao>
-    WRITER$ = (org.apache.avro.io.DatumWriter<Comunicacao>)MODEL$.createDatumWriter(SCHEMA$);
+  private static final org.apache.avro.io.DatumWriter<ComunicacaoEvent>
+    WRITER$ = (org.apache.avro.io.DatumWriter<ComunicacaoEvent>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
     throws java.io.IOException {
@@ -507,8 +507,8 @@ public class Comunicacao extends org.apache.avro.specific.SpecificRecordBase imp
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumReader<Comunicacao>
-    READER$ = (org.apache.avro.io.DatumReader<Comunicacao>)MODEL$.createDatumReader(SCHEMA$);
+  private static final org.apache.avro.io.DatumReader<ComunicacaoEvent>
+    READER$ = (org.apache.avro.io.DatumReader<ComunicacaoEvent>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
     throws java.io.IOException {

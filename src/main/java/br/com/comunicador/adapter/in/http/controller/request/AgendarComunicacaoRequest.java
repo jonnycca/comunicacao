@@ -1,11 +1,12 @@
 package br.com.comunicador.adapter.in.http.controller.request;
 
 import br.com.comunicador.application.domain.TipoComunicacao;
-import jakarta.validation.constraints.NotBlank;
+//import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 
 

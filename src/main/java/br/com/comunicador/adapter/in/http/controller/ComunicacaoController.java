@@ -5,13 +5,14 @@ import br.com.comunicador.adapter.in.http.controller.request.AgendarComunicacaoR
 import br.com.comunicador.adapter.in.http.controller.response.ComunicacaoResponse;
 import br.com.comunicador.application.domain.Comunicacao;
 import br.com.comunicador.application.ports.in.ComunicacaoPort;
-import jakarta.validation.Valid;
+//import jakarta.validation.Valid;
 import jdk.javadoc.doclet.Taglet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.net.URI;
 
 @RestController

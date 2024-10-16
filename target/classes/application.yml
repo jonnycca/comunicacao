@@ -1,0 +1,33 @@
+server.port: 8080
+
+spring:
+  kafka:
+    listener:
+      concurrency: 11
+    bootstrap-servers: http://localhost:9092
+    properties:
+      spring.json.trusted.packages: "*"
+      schema.registry.url: "http://localhost:8081"
+      specific.avro.reader: true
+    consumer:
+      enable-auto-commit: false
+      auto-offset-reset: latest
+      group-id: user-kafka
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      topic: comunicacaotop
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      topic: comunicacaotopic
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update

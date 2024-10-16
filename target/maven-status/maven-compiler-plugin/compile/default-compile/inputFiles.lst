@@ -1,7 +1,9 @@
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\ports\in\ComunicacaoPort.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\database\PersistirComunicacaoPortImpl.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\service\ExecutarComunicacaoPortImpl.java
+C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\config\KafkaConfig.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\ports\out\persistence\PersistirComunicacaoPort.java
+C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\ports\out\event\ComunicarMensagemEventPort.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\domain\TipoComunicacao.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\database\entity\ComunicacaoEntity.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\ComunicacaoController.java
@@ -9,11 +11,13 @@ C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\do
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\ports\in\ExecutarComunicacaoPort.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\request\AgendarComunicacaoRequest.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\service\ComunicacaoPortImpl.java
+C:\workspace\pessoal\comunicador\target\generated-sources\br\com\kafka\comunicador\event\ComunicacaoEvent.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\in\scheduler\AgendadorComunicacoes.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\database\repository\ComunicacaoRepository.java
+C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\kafka\producer\mapper\ComunicacaoEventMapper.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\mapper\ComunicacaoRequestMapper.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\application\domain\StatusComunicacao.java
-C:\workspace\pessoal\comunicador\target\generated-sources\br\com\kafka\comunicador\event\Comunicacao.java
+C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\kafka\producer\ComunicarMensagemEventPortImpl.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\in\http\controller\response\ComunicacaoResponse.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\ComunicadorApplication.java
 C:\workspace\pessoal\comunicador\src\main\java\br\com\comunicador\adapter\out\database\mapper\ComunicacaoEntityMapper.java

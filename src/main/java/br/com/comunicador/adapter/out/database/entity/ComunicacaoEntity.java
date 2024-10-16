@@ -3,12 +3,13 @@ package br.com.comunicador.adapter.out.database.entity;
 
 import br.com.comunicador.application.domain.StatusComunicacao;
 import br.com.comunicador.application.domain.TipoComunicacao;
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Getter

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="85e3e5e6-ba84-4e8e-bc57-94c7033b0663" />
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/br" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/br/com/kafka/comunicador/event" isTestSource="false" />
+    </content>
   </component>
 </module>

@@ -1,7 +1,7 @@
 {
   "namespace": "br.com.kafka.comunicador.event",
   "type": "record",
-  "name": "Comunicacao",
+  "name": "ComunicacaoEvent",
   "fields":[
     {
       "name": "id",
