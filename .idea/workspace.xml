@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e38f57-d0c6-41ad-8b3d-fc7a09e342f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/exception/ComunicacaoStatusInvalidoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comunicador-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/comunicador-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/in/http/controller/mapper/ComunicacaoRequestMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/in/http/controller/mapper/ComunicacaoRequestMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/database/mapper/ComunicacaoEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/database/mapper/ComunicacaoEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/kafka/producer/mapper/ComunicacaoEventMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/br/com/comunicador/adapter/out/kafka/producer/mapper/ComunicacaoEventMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/ComunicacaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/ComunicacaoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/request/AgendarComunicacaoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/request/AgendarComunicacaoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/response/ComunicacaoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/http/controller/response/ComunicacaoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/scheduler/AgendadorComunicacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/in/scheduler/AgendadorComunicacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/PersistirComunicacaoPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/PersistirComunicacaoPortImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/entity/ComunicacaoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/adapter/out/database/entity/ComunicacaoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/domain/Comunicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/domain/Comunicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/service/ComunicacaoPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/comunicador/application/service/ComunicacaoPortImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

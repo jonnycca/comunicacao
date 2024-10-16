@@ -17,7 +17,7 @@ public class ComunicacaoResponse {
     private LocalDateTime dataAgendamento;
     private TipoComunicacao tipoComunicacao;
 
-    private String destinatario; //todo: verificar se muda para outra classe
+    private String destinatario;
 
     private String mensagem;
     private StatusComunicacao status;

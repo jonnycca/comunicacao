@@ -17,7 +17,7 @@ public class AgendadorComunicacoes {
     }
 
     @Scheduled(fixedDelay = 60000)
-    public void scheduleFixedDelayTask() {
+    public void agendarComunicacaoTask() {
         executarComunicacaoPort.executar();
     }
 }

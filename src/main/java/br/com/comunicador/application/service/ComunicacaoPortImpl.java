@@ -1,6 +1,7 @@
 package br.com.comunicador.application.service;
 
 import br.com.comunicador.application.domain.Comunicacao;
+import br.com.comunicador.application.exception.ComunicacaoStatusInvalidoException;
 import br.com.comunicador.application.ports.in.ComunicacaoPort;
 import br.com.comunicador.application.ports.out.persistence.PersistirComunicacaoPort;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class ComunicacaoPortImpl implements ComunicacaoPort {
         Comunicacao comunicacaoConsultada = persistirComunicacao.consultar(id);
 
         if(!comunicacaoConsultada.getStatus().isAgendada()){
-            //TODO: EXCEPTION PQ SO PODE CANCELAR SE TIVER AGENDADA
+            throw new ComunicacaoStatusInvalidoException("Comunicação com status diferente de agendado.");
         }
 
         comunicacaoConsultada.setStatusCancelada();

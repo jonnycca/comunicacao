@@ -34,7 +34,7 @@ public class PersistirComunicacaoPortImpl implements PersistirComunicacaoPort {
 
     @Override
     public Comunicacao consultar(Long id) {
-        return repository.findById(id).map(mapper::map).orElseThrow(()-> new RuntimeException(""));//todo: criar exception propria
+        return repository.findById(id).map(mapper::map).orElseThrow(()-> new RuntimeException("Comunicacao não encontrada para o id: "+ id));
     }
 
     @Override

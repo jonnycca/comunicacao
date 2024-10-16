@@ -1,7 +1,6 @@
 package br.com.comunicador.adapter.in.http.controller.request;
 
 import br.com.comunicador.application.domain.TipoComunicacao;
-//import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
