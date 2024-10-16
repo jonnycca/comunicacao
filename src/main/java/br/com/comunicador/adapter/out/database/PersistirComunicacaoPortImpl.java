@@ -39,7 +39,7 @@ public class PersistirComunicacaoPortImpl implements PersistirComunicacaoPort {
 
     @Override
     public List<Comunicacao> buscarTodasComunicacoesParaExecucao() {
-        List<ComunicacaoEntity> comunicacoesASeremExecutadas = repository.findByDataAgendamentoBeforeAndStatus(LocalDateTime.now(), StatusComunicacao.AGENDADA);
+        List<ComunicacaoEntity> comunicacoesASeremExecutadas = repository.findByDataAgendamentoLessThanEqualAndStatus(LocalDateTime.now(), StatusComunicacao.AGENDADA);
 
         return mapper.mapComunicacaoList(comunicacoesASeremExecutadas);
     }

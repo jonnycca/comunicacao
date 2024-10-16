@@ -9,5 +9,5 @@ import java.util.List;
 
 public interface ComunicacaoRepository extends JpaRepository<ComunicacaoEntity, Long> {
 
-    List<ComunicacaoEntity> findByDataAgendamentoBeforeAndStatus(LocalDateTime data, StatusComunicacao status);
+    List<ComunicacaoEntity> findByDataAgendamentoLessThanEqualAndStatus(LocalDateTime data, StatusComunicacao status);
 }

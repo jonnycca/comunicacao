@@ -19,6 +19,7 @@ enviado e as comunicações são salvas novamente na base de dados com o status 
 Para subir a aplicação, basta entrar na pasta do projeto.
 
 mvn clean install
+
 docker-compose up --build
 
 Aplicação vai ser executada para porta 8080
